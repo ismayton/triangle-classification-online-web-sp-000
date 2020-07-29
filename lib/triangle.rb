@@ -35,8 +35,8 @@ class Triangle
       end
     else 
       begin 
-      
-      raise TriangleError
+        raise TriangleError
+        rescue 
     end 
   end 
   
