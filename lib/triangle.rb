@@ -31,7 +31,7 @@ class Triangle
         elsif @one != @two && @one != @three && @two != @three
         :scalene 
       else 
-        :isoceles 
+        :isosceles 
       end
     else 
       begin 
