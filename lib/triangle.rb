@@ -39,11 +39,6 @@ class Triangle
   end 
   
   class TriangleError < StandardError
-    
-    def message
-      "Oopsie! Invalid Triangle"
-    end 
-    
   end 
   
 end
