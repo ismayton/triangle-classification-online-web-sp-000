@@ -34,9 +34,11 @@ class Triangle
         :isoceles 
       end
     else 
-      raise 
+      raise TriangleError
     end 
   end 
   
-     
+  class TriangleError < StandardError 
+  end 
+  
 end
