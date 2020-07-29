@@ -26,8 +26,9 @@ class Triangle
      
   def kind 
     if self.valid?
-      if @one == @two == @three 
+      if @one == @two && @one == @three 
         :equilateral 
-        elsif @
+        elsif @one != @two && @one != @three 
+        :
      
 end
