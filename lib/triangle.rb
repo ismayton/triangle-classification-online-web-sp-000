@@ -12,11 +12,11 @@ class Triangle
  def valid?
    if @lengths.include?(0)
      return false 
-      elsif @one + @two < @three 
+      elsif @one + @two <= @three 
       return false 
-      elsif @one + @three < @two
+      elsif @one + @three <= @two
       return false 
-      elsif @two + @three < @one
+      elsif @two + @three <= @one
       return false 
     else 
       return true 
