@@ -28,7 +28,15 @@ class Triangle
     if self.valid?
       if @one == @two && @one == @three 
         :equilateral 
-        elsif @one != @two && @one != @three 
-        :
+        elsif @one != @two && @one != @three && @two != @three
+        :scalene 
+      else 
+        :isoceles 
+      end
+    else 
+      raise 
+    end 
+  end 
+  
      
 end
