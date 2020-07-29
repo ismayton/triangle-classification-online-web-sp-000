@@ -36,12 +36,18 @@ class Triangle
     else 
       begin 
         raise TriangleError
-        rescue TriangleError => error 
-          puts error.message
+      rescue TriangleError => error 
+        puts error.message
+      end 
     end 
   end 
   
-  class TriangleError < StandardError 
+  class TriangleError < StandardError
+    
+    def message
+      "Oopsie! Invalid Triangle"
+    end 
+    
   end 
   
 end
