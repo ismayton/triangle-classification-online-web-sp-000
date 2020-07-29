@@ -6,12 +6,13 @@ class Triangle
     @one = one 
     @two = two 
     @three = three
+    @lengths = [@one, @two, @three]
  end 
  
  def valid?
-   if @one == 0 || @two == 0 || @three == 0
+   if @lengths.include?(0)
      return false 
-    elsif @one + @two < @three 
+      elsif @one + @two < @three 
       return false 
       elsif @one + @three < @two
       return false 
