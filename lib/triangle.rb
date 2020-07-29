@@ -34,10 +34,8 @@ class Triangle
         :isosceles 
       end
     else 
-      begin 
-        raise TriangleError
-      rescue TriangleError => error 
-        puts error.message
+      raise TriangleError
+
       end 
     end 
   end 
